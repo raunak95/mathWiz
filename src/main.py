@@ -9,9 +9,12 @@ nCorrect = 0
 incorrect = []
 st = time.time()
 
+sets = []
+
 while((time.time() - st) < x):
     a = randint(15, 40)
     b = randint(15, 40)
+    if ()
     c = a*b
     cInput = int(input('{} x {} = '.format(a, b)))
     if cInput == c:
@@ -34,6 +37,10 @@ else:
 results = [str(f) for f in [nCorrect, accuracy, speed]]
 with open(newFile, 'w') as f:
     f.write('\n'.join(results))
+
+## Stats
+print('Total number of questions: {}'.format(nTotal))
+print('Number of correct answers: {}'.format(nCorrect))
 
 print('\nIncorrect answers: \n')
 if len(incorrect) == 0:
